@@ -109,3 +109,54 @@ h1 {
   font-weight: 600;
   color: #333;
 }
+
+.company-landing {
+  max-width: 1000px;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.company-logo {
+  width: 220px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.company-brief {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.management {
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.management h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.manager {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.manager-photo {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.manager-info {
+  flex: 1;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
