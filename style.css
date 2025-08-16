@@ -185,4 +185,17 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.welcome-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.reemak {
+  color: #007bff; /* Bootstrap Blue */
+  font-weight: 600;
+}
+
+
 
