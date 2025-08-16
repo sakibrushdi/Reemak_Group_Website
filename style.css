@@ -65,10 +65,17 @@ body {
   padding: 2rem;
 }
 
+/* Default company logo size */
 .company-logo {
   width: 220px;
   height: auto;
   margin-bottom: 2rem;
+}
+
+/* Increase logo size only on Reemak Industries page */
+.reemak-industries .company-logo {
+  width: 297px; /* 35% bigger */
+  height: auto;
 }
 
 .company-brief {
@@ -90,73 +97,7 @@ body {
   color: #222;
 }
 
-/* Manager Bio Layout */
-.manager {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: flex-start;
-  margin-bottom: 3rem;
-}
-
-.manager.reverse-layout {
-  flex-direction: row-reverse;
-}
-
-.manager-photo {
-  width: 220px;
-  height: auto;
-  border-radius: 10px;
-  flex-shrink: 0;
-}
-
-.manager-info {
-  flex: 1;
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.7;
-  text-align: left;
-}
-
-/* Home Page Cards (optional but preserved if you're using index.html too) */
-.companies {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.company-card {
-  background-color: #f9f9f9;
-  padding: 2rem;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  width: 260px;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
-  text-decoration: none;
-  color: inherit;
-}
-
-.company-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.company-card img {
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
-  margin-bottom: 1rem;
-}
-
-.company-card h2 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #333;
-}
+/* Manager Bio Box Layout */
 .manager-box {
   display: flex;
   background-color: #f9f9f9;
@@ -195,3 +136,42 @@ body {
   box-shadow: 0 0 8px rgba(0,0,0,0.08);
 }
 
+/* Home Page Cards (optional) */
+.companies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.company-card {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.company-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.company-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.company-card h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
