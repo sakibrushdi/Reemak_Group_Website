@@ -20,8 +20,10 @@ body {
   background-color: #ffffff;
   padding: 1rem 2rem;
   border-bottom: 1px solid #ddd;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
+  left: 0;
   z-index: 1000;
 }
 
@@ -31,8 +33,12 @@ body {
   color: #0077cc;
 }
 
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
 .nav-links a {
-  margin-left: 1.5rem;
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -46,7 +52,9 @@ body {
 /* Main Content */
 .container {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 6rem 2rem 4rem; /* Extra top padding for fixed header */
+  background-color: #ffffff;
+  min-height: 100vh;
 }
 
 h1 {
