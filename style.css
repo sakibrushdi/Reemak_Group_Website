@@ -1,4 +1,4 @@
-/* Reset and base */
+/* Reset and base styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -33,7 +33,7 @@ body {
   align-items: center;
 }
 
-.header .logo {
+.logo {
   font-size: 1.8em;
 }
 
@@ -71,22 +71,37 @@ body {
   font-weight: bold;
   text-decoration: none;
   transition: background 0.3s ease;
+  margin-top: 10px;
 }
 
 .button:hover {
   background: #ddd;
+  color: #1e3c72;
 }
 
-/* Services */
+/* Section Titles */
+section h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #1e3c72;
+  text-align: center;
+}
+
+/* About Section */
+.about {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.about p {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+/* Services Section */
 .services {
   padding: 60px 0;
-  background: #ffffff;
-}
-
-.services h3 {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 40px;
+  background: #f1f1f1;
 }
 
 .service-grid {
@@ -97,7 +112,7 @@ body {
 }
 
 .service-card {
-  background: #f1f1f1;
+  background: white;
   padding: 20px;
   border-radius: 8px;
   flex: 1 1 300px;
@@ -107,10 +122,32 @@ body {
 
 .service-card h4 {
   margin-bottom: 10px;
-  color: #1e3c72;
+  color: #2a5298;
+  font-size: 1.2em;
 }
 
-/* CTA */
+/* Team Section */
+.team {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.team div {
+  background: #f1f1f1;
+  padding: 20px;
+  border-left: 5px solid #2a5298;
+  border-radius: 4px;
+}
+
+.team h4 {
+  color: #1e3c72;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+/* CTA Section */
 .cta {
   background: #2a5298;
   color: white;
@@ -118,9 +155,13 @@ body {
   padding: 60px 20px;
 }
 
-.cta h3 {
-  font-size: 2em;
-  margin-bottom: 10px;
+.cta a.button {
+  background: white;
+  color: #2a5298;
+}
+
+.cta a.button:hover {
+  background: #ddd;
 }
 
 /* Footer */
@@ -137,10 +178,15 @@ body {
   .header .container {
     flex-direction: column;
     gap: 10px;
+    text-align: center;
   }
 
   .service-grid {
     flex-direction: column;
     align-items: center;
+  }
+
+  .team {
+    flex-direction: column;
   }
 }
