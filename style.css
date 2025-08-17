@@ -212,7 +212,7 @@ body {
 }
 
 .company-card img {
-  width: 150px;
+  width: 220px; /*was 150 i am makib it 220*/
   height: 150px;
   object-fit: contain;
   margin-bottom: 1rem;
