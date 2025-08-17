@@ -14,7 +14,7 @@ body {
 }
 
 /* Navbar Styling */
-/*.navbar {
+.navbar {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
@@ -40,9 +40,9 @@ body {
 
 .navbar a:hover {
   background-color: #e0e0e0;
-}*/
+}
 /* Navigation Bar Styling */
-.navbar {
+/*.navbar {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +50,7 @@ body {
   padding: 1rem;
   gap: 0.5rem;
   border-bottom: 1px solid #ddd;
-}
+}*/
 
 .nav-links {
   display: flex;
