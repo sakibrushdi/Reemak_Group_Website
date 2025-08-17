@@ -198,4 +198,54 @@ body {
   margin-bottom: 2.0rem;
 }
 
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-section img {
+    max-width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .management-profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .management-profile img {
+    max-width: 80%;
+    margin-top: 1rem;
+  }
+
+  .management-profile .bio {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .welcome-heading,
+  .subtitle {
+    font-size: 1.4rem;
+    padding: 0 1rem;
+  }
+
+  .company-name {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
 
